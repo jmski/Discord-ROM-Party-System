@@ -94,7 +94,7 @@ function handleCommand(message, command, args) {
             helpMessages.push('!!Help - Shows all commands. Duh.');
             helpMessages.push(' ');
             helpMessages.push('!!create - Creates a party.');
-            helpMessages.push('   !!create [1-11] [MM/DD] [HHmm] | (24-HR miliary format CST)');
+            helpMessages.push('   !!create [1-11] [MM/DD] [HHmm] {Description} | (24-HR miliary format CST)');
             helpMessages.push('                          Example: !!create 1 12/25 2130');
             helpMessages.push('                                            (9:30PM CST)');
             helpMessages.push('    Events:');
@@ -109,6 +109,8 @@ function handleCommand(message, command, args) {
             helpMessages.push('    9 - Oracle (Easy)');
             helpMessages.push('    10 - Oracle (Normal)');
             helpMessages.push('    11 - Oracle (Hard)');
+			helpMessages.push('    12 - Leeching (Offering)');
+			helpMessages.push('    13 - Leecher (Requesting)');
             helpMessages.push(' ');
             helpMessages.push('Note: You must have RIPE role for commands to work ');
             helpMessages.push(' ');
@@ -428,7 +430,7 @@ function handleJoin(message, args) {
         else if (party[role + '4'] === 'OPEN') role = role + '4';
         else if (party[role + '5'] === 'OPEN') role = role + '5';
         else if (party[role + '6'] === 'OPEN') role = role + '6';
-        else return message.channel.send(`Something went wrong. Sorry! Error 107`);
+        else return message.channel.send(`Party is full! Sorry! Error 107`);
     }
 
     if (party[role] !== 'OPEN')
