@@ -15,7 +15,7 @@ module.exports = class Party {
         this.RIPE3 = 'OPEN';
         this.RIPE4 = 'OPEN';
         this.RIPE5 = 'OPEN';
-        this.PRIEST = 'OPEN';
+        this.RIPE6 = 'OPEN';
 
         this.owner = userId;
 
