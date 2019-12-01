@@ -135,6 +135,7 @@ function handleCommand(message, command, args) {
             helpMessages.push('!!list -  Lists all available parties.');
             helpMessages.push(' ');
             helpMessages.push('!!poringlist -  Lists all available items from https://poring.world.');
+	    helpMessages.push('!!poringlist -s {itemname} || searches for specific query on https://poring.word.');
             helpMessages.push(' ');
             helpMessages.push('!!changedate -  Changes the date and the time of an event.');
             helpMessages.push(' ');
