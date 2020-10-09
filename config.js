@@ -1,5 +1,5 @@
 module.exports = {
-    token: 'NjM2MjY3NTQ2MzQwNzUzNDA5.XdhYZg.La_v5bSd2eS9zohvMRtTr9lPjjg',
+    token: '',
     prefix: '!!',
     roles: {
         RIPE: '559950803608272907',
